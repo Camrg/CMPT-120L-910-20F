@@ -1,7 +1,11 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "python.pythonPath": "C:\\Users\\MSI PC\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
 =======
     "python.pythonPath": "/Users/kippins/.pyenv/shims/python"
 >>>>>>> e9decca5065eb58d902a8c0e6a6d55133fce5c5e
+=======
+    "python.pythonPath": "C:\\Users\\CAM\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+>>>>>>> b545e32e89a73cbc827ed3c9ea8aa6d37a6ed33a
 }
