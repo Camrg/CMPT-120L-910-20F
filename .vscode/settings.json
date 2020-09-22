@@ -1,7 +1,4 @@
 {
-<<<<<<< HEAD
-=======
-    "python.pythonPath": "C:\\Users\\MSI PC\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "python.pythonPath": "/usr/local/bin/python3",
     "python.dataScience.jupyterServerURI": "local"
->>>>>>> 600085b942a27bcd1f7f9ece6e4ef32932425642
 }
