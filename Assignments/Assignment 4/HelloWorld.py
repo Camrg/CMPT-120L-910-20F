@@ -1,10 +1,8 @@
 
-def function(x):
-    for i in range(x):
-        totalSum+=i
+def function():
+    x=int(input('Please enter number'))
+    totalSum = 0
+    for i in range(x+1):
+        totalSum += i
     return(totalSum)
-
-if __name__ == "__main__":
-    output = function(30)
-    print(output)
-
+print(function())
