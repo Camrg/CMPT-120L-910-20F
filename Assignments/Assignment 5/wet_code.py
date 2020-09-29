@@ -5,38 +5,38 @@
 # All negative numbers gets taken out of the checking account.
 
 
-def saturdays_bank_transactions(transations) -> (float, float):
+def saturdays_bank_transactions(transactions) -> (float, float):
     savings = 1096.25
     checking = 1590.80
 
-    checking += (transations[0] * 0.85)
-    savings += (transations[0] * 0.15)
+    checking += (transactions[0] * 0.85)
+    savings += (transactions[0] * 0.15)
     
-    checking += transations[1]
+    checking += transactions[1]
     
-    checking += transations[2]
+    checking += transactions[2]
     
-    checking += transations[3]
+    checking += transactions[3]
 
-    checking += (transations[4] * 0.85)
-    savings += (transations[4] * 0.15)
+    checking += (transactions[4] * 0.85)
+    savings += (transactions[4] * 0.15)
     
-    checking += (transations[5] * 0.85)
-    savings += (transations[5] * 0.15)
+    checking += (transactions[5] * 0.85)
+    savings += (transactions[5] * 0.15)
 
-    checking += transations[6]
+    checking += transactions[6]
     
-    checking += transations[7]
+    checking += transactions[7]
     
-    checking += transations[8]
+    checking += transactions[8]
     
-    checking += transations[9]
+    checking += transactions[9]
     
-    checking += transations[10]
+    checking += transactions[10]
 
     return checking, savings
 
 if __name__ == "__main__":
-    transations = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
-    new_balance = saturdays_bank_transactions(transations)
+    transactions = [300.00, -50.00, -5.00, -20, 15.72, 2083.93, -1034.00, -420.00, -5.23, -15.93, -72.90]
+    new_balance = saturdays_bank_transactions(transactions)
     print("Your new checking balance is:", '${:.2f}'.format(round(new_balance[0], 2)), "\n", "Your new savings balance is:", '${:.2f}'.format(round(new_balance[1], 2)))
