@@ -7,6 +7,13 @@ def leap_year(year):
     - Take in a parameter called year and return “Is a leap year” or “Not a leap year”
     """
     # Write your code here. 
+    if year % 400 == 0:
+        return "This is a leap year"
+    elif year % 4 == 0 and not year % 100 == 0:
+        return "Looks like a leap year"
+    else:
+        return "Nope, maybe next year"
+
 
 if __name__ == "__main__":
     years = [2000, 1994, 1912, 3002, 1700, 1400]
