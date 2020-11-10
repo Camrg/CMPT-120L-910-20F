@@ -1,11 +1,13 @@
+import emoji
 from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Goodbye Cruel World'
-
+    # return emoji.emojize('Python is :thumbs_down:')
+    # return emoji.demojize('Python is 👍')
+    return emoji.emojize('This is making me :grimacing:')
 @app.route('/hello/')
 @app.route('/hello/<name>')
 def hello(name=None):
