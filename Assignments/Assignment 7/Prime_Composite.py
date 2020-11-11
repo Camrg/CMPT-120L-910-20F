@@ -6,17 +6,31 @@ def prime_or_composite(number):
     
     - Take in a parameter called number and return “Prime” or “Composite”
     """
-    if number > 1:
+#     from math import sqrt
+#     from math import ceil
+    
+#     number= int(number)
+#     is_prime = True
+#     if number<= 1:
+#         is_prime = False
+#     else:
+#         for divisor in range(2, ceil(sqrt(number))):
+#             if number % divisor == 0:
+#                 is_prime = False
+#                 break
+#     return('Prime' if is_prime else "Composite")
+
+#   Can't format the large number   
+    if number >= 1:
         for i in range(2,number):
             if (number % i) == 0:
-                return "prime"
+                return "Composite"
     elif number < 1:
-        return 'negative'
-    else:
-        return "composite"
+        return 'Negative'
+    return "Prime"
 
 if __name__ == "__main__":
-    numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201]
+    numbers = [1, 2, 10, 31, 47, 89, 101, 103, 97, 187, 981, 19201,-7]
     # If you want to test the efficency of your algorithm add this number to the array above -7
     # If you want to test the efficency of your algorithm add this number to the array above 47055833459
     answers = []
