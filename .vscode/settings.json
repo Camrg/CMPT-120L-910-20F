@@ -1,6 +1,5 @@
 {
     "python.pythonPath": "C:\\Users\\CAM\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
-    "python.dataScience.jupyterServerURI": "local",
     "python.testing.pytestArgs": [
         "."
     ],
@@ -13,5 +12,6 @@
         "./JupyterNotebooks",
         "-p",
         "*test.py"
-    ]
+    ],
+    "jupyter.jupyterServerType": "local"
 }
