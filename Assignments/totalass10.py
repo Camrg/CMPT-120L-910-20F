@@ -16,8 +16,9 @@ args = parser.parse_args()
 def array_of_numbers(number):
     total = 0
     for i in range(number):
-        total = total + i
-        print(i)
+        num = i+1
+        total = total + num
+        print(num)
     return total
 
 print(array_of_numbers(int(args.number)))

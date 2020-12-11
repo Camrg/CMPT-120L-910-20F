@@ -14,10 +14,13 @@ args = parser.parse_args()
 
 # Provide a number and we'll calculate the factorial of that number.
 def array_of_numbers(number):
-    total = 0
-    for i in range(number):
-        total = total + i
-        print(i)
-    return total
+    arr = []
+    for index in range(number + 1):
+        arr.append(index)
+
+    if args.reverse:
+        arr = list(reversed(arr))
+
+    return arr
 
 print(array_of_numbers(int(args.number)))
