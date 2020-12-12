@@ -1,3 +1,12 @@
-<title>Hello from Flask</title>
-  <h1>Hello, World!</h1>
-{% include 'aboutme.html' %}
+<head>
+  <title>Cam's Semester Project Website</title>
+<h1>Cam's Semester Project Website</h1>
+</head>
+<body>
+  <div>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('aboutme') }}">About Cam</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('myhobbies') }}">Cam's Hobbies</a>
+  </div><hr>
+</body>
